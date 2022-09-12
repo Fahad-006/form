@@ -1,0 +1,94 @@
+<html>  
+ <head> 
+<style> 
+body
+{  background-image: url("/home/fahad/Desktop/abstract-watercolor-pastel-background_87374-139.webp");
+   background-size: cover;
+   width:100%;
+}
+h2{
+text-align:center;
+text-shadow:2px 2px 5px blue;
+font-family:'Times New Roman', Times, serif;
+}
+fieldset {
+border-style: dashed; 
+border-color:black;
+border:2px solid rgb(227, 235, 229);
+width: 30%;
+background-color: #cccccc;
+background-size: cover;
+position: relative;
+}
+textarea
+{
+width: 200px;
+}
+</style>  
+</head>  
+ <body>  
+<i>
+<h2>Registration Form</h2> 
+<center> 
+<form action=mms.html method="get" onsubmit="myfunction()">
+<fieldset> 
+<label>Name:</label>
+<input type="text" name="name" required/>
+<br/></br/>
+<label>DOB:</label>
+<input type="date" name="dob" placeholder="DD-MM-YY" size="10" required></input>
+<br/><br/>
+<label>Email:</label>
+<input type="email" id="email-id" name="email"
+placeholder="@gmail.com" required ></input>
+<br/></br>
+<label>Password:</label>
+<input type="password" name="password" size="10" required></input>
+<br/><br/>
+<label>Re-password:</label>
+<input type="password" name="password" size="10" required></input>
+<br/><br/>
+<label>Mobile Number:</label>
+<select name="number" id="number" required>
+   <option value="india">+91</option>
+<option  value="austria">+43</option>
+<option value="belgium">+32</option>
+<option value="Australia">+61</option>
+<option value="US">+1</option>
+</select>
+<input type="integer" name="number"  size="8" maxlength="10" required>
+<br/><br/>
+<label for="Course">Choose a course:</label>
+<select  name="course" id="course" required>
+   <option value="none">--Select--</option>
+<option  value="BCA">BCA</option>
+<option value="BCS">BCS</option>
+<option value="BCS-IT">BSC-IT</option>
+<option value="BT">BT</option>
+</select>
+<BR/><BR/> 
+<label>Choose your gender:</label>
+<br/><br/>
+<input type="radio" id="gender" value="male" name="gender" checked>MALE:</input>
+<input type="radio" id="gender"value="female" name="gender" checked>FEMALE:</input>
+<br/><br/>
+<label>Address:</label>
+<br/><br/>
+<textarea required></textarea>
+<br/><br/>
+<input type="checkbox" value="click here to continue" required>click here to 
+continue</input>
+<br/><br/>
+<input type="submit" value="Submit"></input>
+<input type="Reset" value="Reset"></input>
+</fieldset>
+</i>
+<script>
+function myfunction()
+{
+   alert("you Form has been Submitted");
+}
+</script>
+</form>  
+</body>  
+</html>  

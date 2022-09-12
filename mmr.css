@@ -1,0 +1,21 @@
+body
+{
+background-color:rgb(204, 192, 255);
+text-align:center;
+}
+
+h1
+{
+color:yellow;
+font-family:TIMES NEW ROMAN;
+border: 4px Dotted Blue;
+size:20;
+}
+p
+{
+size:20px;
+color:green;
+}
+
+
+
