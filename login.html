@@ -1,23 +1,25 @@
 <html>
     <head>
         <style>
-            fieldset
+            .login
             {
               background-color:#cccccc;
-              border-style: 2px groove grey;
+              border-style: none;
               width: 20%;
-              Opacity:0.5;
+              padding: 10px;
+              
             }
             h1 
             {
                 text-transform: capitalize;
                 color:rgb(66, 90, 194);
-                text-align: center;
+                text-decoration: 2px double blue;
+                     
             } 
             body
             {
                 background-repeat: no-repeat;
-                background-attachment: fixed;
+                background-position-y: down;
             }
             label
             {
@@ -25,30 +27,46 @@
             }
             legend
             {
-                color: green;
-                text-transform: capitalize;
+            color:black;
+            font-style: oblique;
+        
             }
+            .button
+            {
+                padding: 5px;
+                background-color:#06f;
+                border-style:none ;
+                text-transform: uppercase;
+                color: #cccccc;
+                cursor: pointer;              
+            }
+            
         </style>
     </head>
-    <body background="300942.webp">
+    <body background="/home/fahad/html/form/images/300942.webp">
         <h1 align="center">Team Learner</h1>
-        <form>    
+        <br/>
+        <form>
             <center>
+            <div class="login">
         <fieldset>
-            <legend>login</legend>
-            <label>Username:</label>
-            <input type="search" size="15" required></form>
+            <legend>Login</legend>
+            <label>username:</label>
+            <input type="text" size="20" required></form>
             <br/><br/>
-            <label>Password:</label>
-            <input type="password"  size ="15"required>
+            <label>password:</label>
+            <input type="password"  size ="20"required>
             <br/><br/>
             <center>
-            <input type="submit" value="login">
+                <button class="button">
+                    Login
+            </button>
             </center>
             <center>
             <p><a href="">Forget Password</a></p>
             </center>
         </fieldset>
+</div>
     </form>
     </center>
     </body>
