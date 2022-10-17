@@ -1,38 +1,60 @@
-<html>  
+<!DOCTYPE html>
+<html>
  <head> 
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <title>Sign up</title>
 <style> 
 body
-{  background-image: url("abstract-watercolor-pastel-background_87374-139.webp");
+{  background-image: url("/home/fahad/Desktop/abstract-watercolor-pastel-background_87374-139.webp");
    background-size: cover;
    width:100%;
-   Background-attachement:Fixed;
+   background-attachment: fixed;
+   position: fixed;
 }
 h2{
 text-align:center;
 text-shadow:2px 2px 5px blue;
 font-family:'Times New Roman', Times, serif;
 }
-fieldset {
-border-style: dashed; 
+.card-body{
+border-style: double; 
 border-color:black;
+width: 25%;
 border:2px solid rgb(227, 235, 229);
-width: 30%;
 background-color: #cccccc;
-background-size: cover;
-position: relative;
+padding: 20px;
+width: max-content;
 }
 textarea
 {
 width: 200px;
+}
+.button1
+{
+   border: none;
+   background-color: #06f;
+   color: #cccccc;
+   padding: 5px ;
+}
+.button2
+{
+   border: none;
+   background-color:rgb(230, 19, 19);
+   color: #cccccc;
+   padding: 5px ;
 }
 </style>  
 </head>  
  <body>  
 <i>
 <h2>Registration Form</h2> 
-<center> 
-<form action=index3.html method="get" onsubmit="myfunction()">
-<fieldset> 
+<form action="mms.html" method="post" onsubmit="myfunction()">
+       <center>
+      <div class="card-body">
 <label>Name:</label>
 <input type="text" name="name" required/>
 <br/></br/>
@@ -44,10 +66,10 @@ width: 200px;
 placeholder="@gmail.com" required ></input>
 <br/></br>
 <label>Password:</label>
-<input type="password" name="password" id="password" size="10" required></input>
+<input type="password" name="password" size="10" id= "password" required></input>
 <br/><br/>
 <label>Re-password:</label>
-<input type="password" name="password" size="10" id="re-type password" required></input>
+<input type="password" name="password" id="re-type password" size="10" required></input>
 <br/><br/>
 <label>Mobile Number:</label>
 <select name="number" id="number" required>
@@ -60,8 +82,8 @@ placeholder="@gmail.com" required ></input>
 <input type="integer" name="number"  size="8" maxlength="10" required>
 <br/><br/>
 <label for="Course">Choose a course:</label>
-<select  name="course" id="course" required>
-   <option value="">--Select--</option>
+<select  id="course" required>
+   <option value=>--Select--</option>
 <option  value="0">BCA</option>
 <option value="1">BCS</option>
 <option value="2">BSC-IT</option>
@@ -74,7 +96,7 @@ placeholder="@gmail.com" required ></input>
 <input type="radio" id="gender"value="female" name="gender" checked>FEMALE:</input>
 <br/><br/>
 <label>Address:</label>
-<br/><br/>
+<br/>
 <textarea required></textarea>
 <br/><br/>
 <input type="checkbox" value="click here to continue" required>click here to 
@@ -82,26 +104,25 @@ continue</input>
 <br/><br/>
 <input type="submit" value="Submit"></input>
 <input type="Reset" value="Reset"></input>
-</fieldset>
 </i>
+</div>
 <script>
- //form checking
 function myfunction()
 {
-   alert("you Form has been Submitted");
+   alert("you Form has been Submitted")
 }
- //password checking
- var password=document.getElementById("password"),
+var password=document.getElementById("password"),
 confirm_password=document.getElementById("re-type password");
 function validatePassword(){
   if(password.value != confirm_password.value) {
-    confirm_password.setCustomValidity("Password Did't Match");
+    confirm_password.setCustomValidity("Passwords Don't Match");
   } else {
     confirm_password.setCustomValidity('');
   }
 }
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
+
 </script>
 </form>  
 </body>  
